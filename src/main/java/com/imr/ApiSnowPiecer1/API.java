@@ -1,4 +1,4 @@
-package com.imr.ApiSnowPiecer.Configs;
+package com.imr.ApiSnowPiecer1;
 
 /**
  * Created by imranp on 12/31/2016.
@@ -23,7 +23,7 @@ public class API {
 
     }
 
-    public API(String host, String port, String path, String payload, String requestType, boolean payloadRequired,boolean queryParamRequired){
+    public API(String host, String port, String path, String payload, String requestType, boolean payloadRequired, boolean queryParamRequired){
         Host=host;
         Port=port;
         Path=path;
@@ -33,7 +33,7 @@ public class API {
         QueryParamRequired=queryParamRequired;
     }
 
-    public API(String path, String requestType,boolean payloadRequired,boolean queryParamRequired){
+    public API(String path, String requestType, boolean payloadRequired, boolean queryParamRequired){
         Path=path;
         RequestType=requestType;
         PayloadRequired=payloadRequired;

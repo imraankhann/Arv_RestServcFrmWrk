@@ -1,8 +1,6 @@
 package com.imr.ApiSnowPiecer1;
 
-import com.imr.ApiSnowPiecer.Configs.API;
 import com.imr.ApiSnowPiecer.Configs.APINAME;
-import com.imr.ApiSnowPiecer.Configs.Service;
 import org.apache.commons.configuration.HierarchicalConfiguration;
 import org.apache.commons.configuration.XMLConfiguration;
 import org.apache.commons.configuration.tree.xpath.XPathExpressionEngine;

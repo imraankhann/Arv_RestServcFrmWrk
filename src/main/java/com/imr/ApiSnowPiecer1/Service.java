@@ -1,6 +1,6 @@
-package com.imr.ApiSnowPiecer.Configs;
+package com.imr.ApiSnowPiecer1;
 
-import com.imr.ApiSnowPiecer1.Configuration;
+import com.imr.ApiSnowPiecer.Configs.APINAME;
 import org.apache.commons.lang.text.StrSubstitutor;
 
 import java.util.HashMap;
@@ -22,7 +22,7 @@ public class Service {
     Configuration config= new Configuration();
 
 
-    public Service(SERVICENAME service, APINAME api){
+    public Service(SERVICENAME service, com.imr.ApiSnowPiecer.Configs.APINAME api){
         API details=config.LoadServiceDetails(service,api);
         if(!details.Port.equals(""))
         {
@@ -42,9 +42,9 @@ public class Service {
     }
 
 
-    public Service(SERVICENAME service, APINAME api, String[] payload)
+    public Service(SERVICENAME service, com.imr.ApiSnowPiecer.Configs.APINAME api, String[] payload)
     {
-        API details=config.loadServiceDetails(service,api);
+        API details=config.LoadServiceDetails(service,api);
         if(!details.Port.equals(null))
         {
             BaseURL=details.Host+":"+details.Port;
@@ -64,10 +64,10 @@ public class Service {
         //printAPIDetails();
     }
 
-    public Service(APINAME api)
+    public Service(com.imr.ApiSnowPiecer.Configs.APINAME api)
     {
         //LoadAPIDetails(api.config);
-        API details=config.loadAPIDetails(api.name().toString());
+        API details=config.LoadAPIDetails(api.name().toString());
         BaseURL=config.BaseURL;
         Path=details.Path;
         URL=getCompleteURL(BaseURL,Path);
@@ -78,7 +78,7 @@ public class Service {
 
     }
 
-    public Service(APINAME api, String[] payload){
+    public Service(com.imr.ApiSnowPiecer.Configs.APINAME api, String[] payload){
 
         //LoadAPIDetails(api,config,payload);
 
@@ -93,7 +93,7 @@ public class Service {
         //printAPIDetails();
     }
 
-    public void LoadAPIDetails(APINAME api, Configuration config)
+    public void LoadAPIDetails(com.imr.ApiSnowPiecer.Configs.APINAME api, Configuration config)
     {
         API details=config.LoadAPIDetails(api.name().toString());
         BaseURL=config.BaseURL;
@@ -105,7 +105,7 @@ public class Service {
         Payload=PreparePayload(details.Payload.payload);
     }
 
-    public void LoadServiceDetails(SERVICENAME service, APINAME api, Configuration config)
+    public void LoadServiceDetails(SERVICENAME service, com.imr.ApiSnowPiecer.Configs.APINAME api, Configuration config)
     {
 
         API details=config.LoadAPIDetails(api.name().toString());
