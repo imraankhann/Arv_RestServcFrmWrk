@@ -1,6 +1,7 @@
 package com.imr.ApiSnowPiecer1;
 
 import com.imr.ApiSnowPiecer.Configs.APINAME;
+import com.imr.ApiSnowPiecer.Configs.SERVICENAME;
 import org.apache.commons.lang.text.StrSubstitutor;
 
 import java.util.HashMap;
@@ -42,7 +43,7 @@ public class Service {
     }
 
 
-    public Service(SERVICENAME service, com.imr.ApiSnowPiecer.Configs.APINAME api, String[] payload)
+    public Service(SERVICENAME service, APINAME api, String[] payload)
     {
         API details=config.LoadServiceDetails(service,api);
         if(!details.Port.equals(null))
@@ -89,7 +90,7 @@ public class Service {
         RequestType=details.RequestType;
         PayloadRequired=details.PayloadRequired;
         QueryParamRequired=details.QueryParamRequired;
-        Payload=PreparePayload(details.Payload.payload);
+        Payload=PreaparePayload(details.Payload.payload);
         //printAPIDetails();
     }
 
@@ -102,7 +103,7 @@ public class Service {
         RequestType=details.RequestType;
         PayloadRequired=details.PayloadRequired;
         QueryParamRequired=details.QueryParamRequired;
-        Payload=PreparePayload(details.Payload.payload);
+        Payload=PreaparePayload(details.Payload.payload);
     }
 
     public void LoadServiceDetails(SERVICENAME service, com.imr.ApiSnowPiecer.Configs.APINAME api, Configuration config)

@@ -1,6 +1,7 @@
 package com.imr.ApiSnowPiecer1;
 
 import com.imr.ApiSnowPiecer.Configs.APINAME;
+import com.imr.ApiSnowPiecer.Configs.SERVICENAME;
 import org.apache.commons.configuration.HierarchicalConfiguration;
 import org.apache.commons.configuration.XMLConfiguration;
 import org.apache.commons.configuration.tree.xpath.XPathExpressionEngine;
@@ -170,7 +171,8 @@ public class Configuration {
          return configFolderPath+"/"+masterConfigFileName;
         }
 
-        public void setBaseURL(String Environment){
+        public void setBaseURL(String Environment)
+        {
           switch(Environment.toUpperCase()){
               case "QA":
               {
