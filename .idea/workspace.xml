@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="d49204cc-75ba-4ddb-a762-ef4d10e16259" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/imr/ApiSnowPiecer1/Configuration.java" afterPath="$PROJECT_DIR$/src/main/java/com/imr/ApiSnowPiecer1/Configuration.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/imr/ApiSnowPiecer1/Service.java" afterPath="$PROJECT_DIR$/src/main/java/com/imr/ApiSnowPiecer1/Service.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -38,7 +36,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/imr/ApiSnowPiecer1/Configuration.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="75">
-              <caret line="172" column="0" lean-forward="true" selection-start-line="172" selection-start-column="0" selection-end-line="172" selection-end-column="0" />
+              <caret line="172" column="0" lean-forward="false" selection-start-line="172" selection-start-column="0" selection-end-line="172" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -66,11 +64,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SERVICENAME.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SERVICENAME.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/imr/ApiSnowPiecer/Configs/SERVICENAME.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="25" lean-forward="false" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
+            <state relative-caret-position="238">
+              <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TESTPLATFORM.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/imr/ApiSnowPiecer/Configs/TESTPLATFORM.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="4" lean-forward="false" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -113,9 +121,10 @@
         <option value="$PROJECT_DIR$/src/main/java/com/imr/ApiSnowPiecer/Configs/Service.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/imr/ApiSnowPiecer1/API.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/imr/ApiSnowPiecer1/APINAME.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/imr/ApiSnowPiecer/Configs/SERVICENAME.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/imr/ApiSnowPiecer1/Service.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/imr/ApiSnowPiecer1/Configuration.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/imr/ApiSnowPiecer/Configs/SERVICENAME.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/imr/ApiSnowPiecer/Configs/TESTPLATFORM.java" />
       </list>
     </option>
   </component>
@@ -684,7 +693,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/imr/ApiSnowPiecer1/Configuration.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
-          <caret line="172" column="0" lean-forward="true" selection-start-line="172" selection-start-column="0" selection-end-line="172" selection-end-column="0" />
+          <caret line="172" column="0" lean-forward="false" selection-start-line="172" selection-start-column="0" selection-end-line="172" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -693,8 +702,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/imr/ApiSnowPiecer/Configs/SERVICENAME.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="25" lean-forward="false" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
+        <state relative-caret-position="238">
+          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/imr/ApiSnowPiecer/Configs/TESTPLATFORM.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="4" lean-forward="false" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
           <folding />
         </state>
       </provider>
