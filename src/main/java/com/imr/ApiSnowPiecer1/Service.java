@@ -23,7 +23,7 @@ public class Service {
     Configuration config= new Configuration();
 
 
-    public Service(SERVICENAME service, com.imr.ApiSnowPiecer.Configs.APINAME api){
+    public Service(SERVICENAME service, APINAME api){
         API details=config.LoadServiceDetails(service,api);
         if(!details.Port.equals(""))
         {
@@ -61,7 +61,7 @@ public class Service {
         RequestType=details.RequestType;
         PayloadRequired=details.PayloadRequired;
         QueryParamRequired=details.QueryParamRequired;
-        Payload=PreaparePayload(details.Payload.payload);
+        Payload=PreaparePayload(details.Payload,payload);
         //printAPIDetails();
     }
 
@@ -90,11 +90,11 @@ public class Service {
         RequestType=details.RequestType;
         PayloadRequired=details.PayloadRequired;
         QueryParamRequired=details.QueryParamRequired;
-        Payload=PreaparePayload(details.Payload.payload);
+        Payload=PreaparePayload(details.Payload,payload);
         //printAPIDetails();
     }
 
-    public void LoadAPIDetails(com.imr.ApiSnowPiecer.Configs.APINAME api, Configuration config)
+    public void LoadAPIDetails(APINAME api, Configuration config)
     {
         API details=config.LoadAPIDetails(api.name().toString());
         BaseURL=config.BaseURL;
@@ -103,7 +103,7 @@ public class Service {
         RequestType=details.RequestType;
         PayloadRequired=details.PayloadRequired;
         QueryParamRequired=details.QueryParamRequired;
-        Payload=PreaparePayload(details.Payload.payload);
+      //  Payload=PreaparePayload(details.Payload,payload);
     }
 
     public void LoadServiceDetails(SERVICENAME service, com.imr.ApiSnowPiecer.Configs.APINAME api, Configuration config)
